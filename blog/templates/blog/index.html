@@ -1,4 +1,5 @@
 {% load bootstrap5 %}
+{% load static %}
 
 {# Load CSS and JavaScript #}
 {% bootstrap_css %}
@@ -10,7 +11,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      {% comment %} <link rel="stylesheet" href="{% static 'base/style.css' %}"> {% endcomment %}
+      <link rel="stylesheet" href="{% static 'blog/css/index.css' %}">
       <title>Outdoor Vibrations</title>
   </head>
   <body>
@@ -38,5 +39,23 @@
         </div>
       </nav>
     </header>
+    <main>
+      <div class="left-container container">
+        <h1>
+          Connecting to Nature
+        </h1>
+
+        <p>Love hiking? Our blog has everything you need for your next adventure. From trails to gear, we've got you covered. Join us and discover the beauty of nature together!</p>
+
+        <div class="btn-container">
+          <a href="#" class="btn btn-primary">Join Now</a>
+          <a href="#" class="btn btn-primary">Read Blog</a>
+        </div>
+      </div>
+      <div class="right-container container">
+        <img src="{% static 'blog/images/landing-pic.png' %}" class="img-fluid" alt="person with campfire">
+      </div>
+    </main>
+    <img src="{% static 'blog/images/vector.png' %}" class="img-fluid" id="vector">
   </body>
 </html>
