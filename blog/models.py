@@ -7,3 +7,6 @@ class BlogPost(models.Model):
     date_published = models.DateTimeField(auto_now_add=True)
     author = models.CharField(max_length=255)
     image = ImageField(upload_to='images/')
+
+    def __str__(self):
+        return self.title
