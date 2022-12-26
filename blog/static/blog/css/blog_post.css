@@ -33,6 +33,11 @@ main {
 }
 
 main
+.post-img {
+  margin-top: 26px;
+}
+
+main
 h1 {
   font-size: 32px;
   text-align: center;
@@ -100,17 +105,28 @@ main
 }
 
 @media (min-width: 1024px) {
-    body
-    main
-    h1 {
-      font-size: 58px;
-      padding: 0 120px;
-    }
+  body
+  main {
+    text-align: center;
+  }
+
+  body
+  main
+  h1 {
+    font-size: 58px;
+    padding: 0 120px;
+  }
     
-    body
-    main
-    p {
-      font-size: 18px;
-      padding: 0 100px;
-    }
+  body
+  main
+  p {
+    font-size: 18px;
+    padding: 0 100px;
+    text-align: left;
+  }
+
+  main
+  .post-img {
+    height: 460px;
+  }
 }
