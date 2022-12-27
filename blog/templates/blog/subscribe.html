@@ -1,0 +1,34 @@
+{% load bootstrap5 %}
+{% load static %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="{% static 'blog/css/index.css' %}">
+      {% comment %} <link rel="stylesheet" href="{% static 'blog/css/about.css' %}"> {% endcomment %}
+      <title>About</title>
+  </head>
+  <body>
+    <header>
+      {% include 'blog/navbar.html' %}
+    </header>
+    <main>
+      <div class="left-container container">
+        <h1>
+          Subscribe
+        </h1>
+      </div>
+      <div class="right-container container">
+        <img src="{% static 'blog/images/landing-pic.png' %}" class="img-fluid" alt="person with campfire">
+      </div>
+    </main>
+    {% comment %} <img src="{% static 'blog/images/vector.png' %}" class="img-fluid" id="vector"> {% endcomment %}
+  </body>
+</html>
