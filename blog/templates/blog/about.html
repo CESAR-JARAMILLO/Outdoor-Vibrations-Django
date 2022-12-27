@@ -11,7 +11,8 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="{% static 'blog/css/about.css' %}">
+      <link rel="stylesheet" href="{% static 'blog/css/index.css' %}">
+      {% comment %} <link rel="stylesheet" href="{% static 'blog/css/about.css' %}"> {% endcomment %}
       <title>About</title>
   </head>
   <body>
@@ -19,7 +20,21 @@
       {% include 'blog/navbar.html' %}
     </header>
     <main>
+      <div class="left-container container">
+        <h1>
+          About Us
+        </h1>
 
+        <p>Outdoor Vibrations is a community for those who believe that adventure and personal growth go hand in hand. Whether you're a seasoned hiker or just starting out, we believe that connection with nature and with others is key to inner strength. Join us on the trail as we explore, grow, and discover together.</p>
+
+        <div class="btn-container">
+          <a href="#" class="btn btn-primary">Join Now</a>
+          <a href="#" class="btn btn-primary">Read Blog</a>
+        </div>
+      </div>
+      <div class="right-container container">
+        <img src="{% static 'blog/images/landing-pic.png' %}" class="img-fluid" alt="person with campfire">
+      </div>
     </main>
     {% comment %} <img src="{% static 'blog/images/vector.png' %}" class="img-fluid" id="vector"> {% endcomment %}
   </body>
