@@ -12,7 +12,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="{% static 'blog/css/index.css' %}">
-      {% comment %} <link rel="stylesheet" href="{% static 'blog/css/about.css' %}"> {% endcomment %}
+      <link rel="stylesheet" href="{% static 'blog/css/subscribe.css' %}">
       <title>About</title>
   </head>
   <body>
@@ -22,8 +22,20 @@
     <main>
       <div class="left-container container">
         <h1>
-          Subscribe
+          Connect to Our Community
         </h1>
+        <div class="form-container container">
+          <form method='POST' action='.' class="form">
+            {% comment %} <h2 id="form-title">Contact Form</h2> {% endcomment %}
+            <p class="form-text">Stay up-to-date on all the latest from Outdoor Vibrations! Sign up for our email updates to get notified about new blog posts, special deals, and other exciting news. Plus, you'll be the first to know about any limited-time offers. Simply click the "Sign up now" button to join our email list.</p>
+            {% csrf_token %}
+    
+            {% bootstrap_form form %}
+    
+            {% bootstrap_button "Submit" button_type="submit" button_class="btn-primary" size="lg" %}
+    
+          </form>
+        </div>
       </div>
       <div class="right-container container">
         <img src="{% static 'blog/images/landing-pic.png' %}" class="img-fluid" alt="person with campfire">
