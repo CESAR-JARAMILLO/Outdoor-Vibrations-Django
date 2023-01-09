@@ -33,7 +33,8 @@ main {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
-  height: 90%;
+  height: 98vh;
+  margin-bottom: 24px;
 }
 
 .right-container {
@@ -103,7 +104,7 @@ a {
     display: flex;
     flex-direction: row;
     text-align: left;
-    height: 60vh;
+    height: 90vh;
     margin-top: 40px;
   }
   .left-container {
@@ -114,7 +115,7 @@ a {
   .right-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
   }
 
