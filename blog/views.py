@@ -26,7 +26,7 @@ def subscribe(request):
             email = form.cleaned_data['email']
             # content = form.cleaned_data['content']
 
-            html = render_to_string('base/emails/contactform.html', {
+            html = render_to_string('blog/emails/subscribeform.html', {
                 # 'name':name,
                 'email':email,
                 # 'content':content
