@@ -132,10 +132,9 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
    BASE_DIR / 'blog/static',
-   BASE_DIR / 'static'
 ]
 
-MEDIA_ROOT = 'static/images'
+MEDIA_ROOT = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL =  '/images/'
 
