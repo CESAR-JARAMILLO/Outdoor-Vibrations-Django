@@ -40,6 +40,11 @@ p {
 }
 
 div .btn {
-  background-color: #1DAFD6;
+  background-color: #58b727;
   border: none;
+}
+
+div .btn:hover {
+  background: #40916c;
+  border: 1px solid #58b727;
 }
