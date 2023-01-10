@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%2rhsy87%z-)sjdytuu)v@7u81=z_z8=k)9i(y@#dm@t!dxq2(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'outdoorvibrations.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'outdoorvibrations.herokuapp.com']
 
 
 EMAIL_HOST = 'smtp.mailtrap.io'
