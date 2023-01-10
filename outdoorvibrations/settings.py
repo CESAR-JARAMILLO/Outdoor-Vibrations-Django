@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%2rhsy87%z-)sjdytuu)v@7u81=z_z8=k)9i(y@#dm@t!dxq2(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'outdoorvibrations.herokuapp.com/']
 
 
 EMAIL_HOST = 'smtp.mailtrap.io'
@@ -51,6 +51,9 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+
+    "whitenoise.middleware.WhiteNoiseMiddleware",
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -132,6 +135,7 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_ROOT = 'static/images'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL =  '/images/'
 
 
@@ -139,3 +143,6 @@ MEDIA_URL =  '/images/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+if os.getcwd() == '/app':
+    DEBUG = False
