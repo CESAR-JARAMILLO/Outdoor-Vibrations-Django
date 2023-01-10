@@ -19,14 +19,14 @@ def subscribe(request):
         form = SubscribeForm(request.POST)
 
         if form.is_valid():
-            name = form.cleaned_data['name']
+            # name = form.cleaned_data['name']
             email = form.cleaned_data['email']
-            content = form.cleaned_data['content']
+            # content = form.cleaned_data['content']
 
             html = render_to_string('base/emails/contactform.html', {
-                'name':name,
+                # 'name':name,
                 'email':email,
-                'content':content
+                # 'content':content
             })
 
             send_mail('The contact form subject', 'This is the message', 'noreply@code.com', ['cesarjaramillodev@gmail.com'], html_message=html)
