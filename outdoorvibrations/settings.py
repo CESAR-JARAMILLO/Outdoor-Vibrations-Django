@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'outdoorvibrations.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydb',
+        'NAME': 'db.sqlite3',
     }
 }
 
