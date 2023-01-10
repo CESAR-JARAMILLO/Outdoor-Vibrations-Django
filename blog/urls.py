@@ -9,6 +9,7 @@ urlpatterns = [
     path('subscribe/', views.subscribe, name='subscribe'),
     path('blog/<int:pk>/', views.blog_post, name='blog_post'),
     path('blog/cards/', views.blog_cards, name='blog_cards'),
+    path('thankyou/', views.thankyou, name='thankyou'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
