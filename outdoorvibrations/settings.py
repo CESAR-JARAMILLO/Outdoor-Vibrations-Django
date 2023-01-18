@@ -97,9 +97,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'outdoorvibrations',
-        'USER': 'postgres',
+        'USER': 'cesarjaramillo',
         'PASSWORD': 'Hikelife89!',
-        'HOST': 'localhost',
+        'HOST': 'outdoorvibrations-identifier.cndahqtfgjmk.us-west-1.rds.amazonaws.com',
         'PORT': '5432'
     }
 }
